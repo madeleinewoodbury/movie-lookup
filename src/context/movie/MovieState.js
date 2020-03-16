@@ -19,11 +19,11 @@ const MovieState = props => {
   const searchMovies = async title => {
     setLoading();
     const res = await axios.get(
-      `http://www.omdbapi.com/?apikey=${omdbApiKey}&t=${title}`
+      `http://www.omdbapi.com/?apikey=${omdbApiKey}&s=${title}`
     );
     dispatch({
       type: SEARCH_MOVIES,
-      payload: res.data
+      payload: res.data.Search
     });
   };
 
