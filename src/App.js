@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
+import Movie from './components/movies/Movie';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/movie/:id" component={Movie} />
               <Route component={NotFound} />
             </Switch>
           </div>
