@@ -1,6 +1,6 @@
 # Movie Lookup
 
-A simple app where you can lookup movies.
+> A simple app where you can lookup movies.
 
 ## Usage
 
@@ -8,11 +8,15 @@ Rename ".env.env.local" to ".env.local" and update the values/settings to your o
 
 ## Install Dependencies
 
-> npm install
+```
+npm install
+```
 
 ## Run App
 
-> npm start
+```
+npm start
+```
 
 ## APIs
 
