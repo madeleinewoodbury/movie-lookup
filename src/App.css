@@ -2,11 +2,10 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #303841;
-  --secondary-color: #3a4750;
-  --light-color: #eeeeee;
-  --danger-color: #d72323;
-  --success-color: #28a745;
+  --primary-color: #10316b;
+  --secondary-color: #e25822;
+  --light-color: #ececeb;
+  --dark-color: #000000;
 }
 
 * {
@@ -19,17 +18,13 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: var(--light-color);
+  background-color: white;
   color: #333;
 }
 
 a {
   color: var(--secondary-color);
   text-decoration: none;
-}
-
-a:hover {
-  color: #666;
 }
 
 ul {
@@ -48,23 +43,19 @@ img {
   padding: 0 2rem;
 }
 
+.lead {
+  font-size: 1.2rem;
+}
+
 .btn {
   display: inline-block;
-  background: var(--light-color);
-  color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-in;
   outline: none;
-}
-
-.btn-link {
-  background: none;
-  padding: 0;
-  margin: 0;
 }
 
 .btn-block {
@@ -72,56 +63,34 @@ img {
   width: 100%;
 }
 
-.alert {
-  padding: 0.7rem;
-  margin: 1rem 0;
-  opacity: 0.9;
-  background: var(--light-color);
-  color: #333;
-}
-
 .btn-primary,
-.bg-primary,
-.alert-primary {
+.bg-primary {
   background: var(--primary-color);
   color: #fff;
 }
 
 .btn-secondary,
-.bg-secondary,
-.alert-secondary {
+.bg-secondary {
   background: var(--secondary-color);
   color: #fff;
 }
 
 .btn-light,
-.bg-light,
-.alert-light {
+.bg-light {
   background: var(--light-color);
   color: #333;
 }
 
-.btn-danger,
-.bg-danger,
-.alert-danger {
-  background: var(--danger-color);
-  color: #fff;
-}
-
-.btn-success,
-.bg-success,
-.alert-success {
-  background: var(--success-color);
-  color: #fff;
-}
-
-.btn:hover {
+.btn-light:hover {
   opacity: 0.8;
 }
 
-.bg-light,
-.badge-light {
-  border: #ccc solid 1px;
+.btn-secondary:hover {
+  background: var(--dark-color);
+}
+
+.btn-link:hover {
+  color: var(--dark-color);
 }
 
 .round-img {
@@ -248,7 +217,7 @@ button {
 }
 
 .navbar a:hover {
-  border-bottom-color: var(--danger-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .navbar .welcome span {
@@ -305,6 +274,10 @@ button {
   .grid-3,
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 1.4rem;
   }
 }
 

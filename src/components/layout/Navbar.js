@@ -5,7 +5,8 @@ const Navbar = () => {
   return (
     <nav className="navbar bg-primary">
       <h1>
-        <i className="fas fa-film"></i> Movie Lookup
+        <i className="fas fa-film"></i>{' '}
+        <span className="hide-sm">Movie Lookup</span>
       </h1>
       <ul>
         <li>
