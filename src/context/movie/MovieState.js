@@ -4,7 +4,13 @@ import MovieContext from './movieContext';
 import MovieReducer from './movieReducer';
 import { SEARCH_MOVIES, CLEAR_MOVIES, GET_MOVIE, SET_LOADING } from '../types';
 
-let omdbApiKey = process.env.REACT_APP_OMDB_API_KEY;
+let omdbApiKey;
+
+if (process.env.NODE_ENV !== 'production') {
+  omdbApiKey = process.env.REACT_APP_OMDB_API_KEY;
+} else {
+  omdbApiKey = process.env.OMDB_API_KEY;
+}
 
 const MovieState = props => {
   const initialState = {
