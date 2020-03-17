@@ -25,7 +25,7 @@ const MovieState = props => {
   const searchMovies = async title => {
     setLoading();
     const res = await axios.get(
-      `http://www.omdbapi.com/?apikey=${omdbApiKey}&s=${title}`
+      `https://www.omdbapi.com/?apikey=${omdbApiKey}&s=${title}`
     );
     dispatch({
       type: SEARCH_MOVIES,
@@ -37,7 +37,7 @@ const MovieState = props => {
   const getMovie = async id => {
     setLoading();
     const res = await axios.get(
-      `http://www.omdbapi.com/?apikey=${omdbApiKey}&i=${id}`
+      `https://www.omdbapi.com/?apikey=${omdbApiKey}&i=${id}`
     );
     dispatch({
       type: GET_MOVIE,
